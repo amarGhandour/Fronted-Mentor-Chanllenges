@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- displays site properly based on user's device -->
+
+    <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+
+<!-- Rating state start -->
+
+<!--  How did we do?-->
+
+<!--  Please let us know how we did with your support request. All feedback is appreciated -->
+<!--  to help us improve our offering!-->
+
+<!--  1 2 3 4 5-->
+
+<!--  Submit-->
+
+<div class="container">
+    <div class="box" id="form-box">
+        <form class="star-form">
+            <div class="star"><i class="fa-solid fa-star"></i></div>
+            <h1>How did we do?</h1>
+            <p>
+                Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!
+            </p>
+            <p class="error-msg" id="error-msg">Please select a score!</p>
+            <div class="choices-btns">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+            </div>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="box" id="thanks-box">
+        <div>
+            <img src="images/illustration-thank-you.svg">
+            <h4>You selected 4 out of 5</h4>
+            <h1>Thank you!</h1>
+            <p>
+                We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+    <!-- Thank you state end -->
+</div>
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+</div>
+</body>
+</html>

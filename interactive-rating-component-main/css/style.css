@@ -1,0 +1,160 @@
+* {
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 15px;
+}
+
+body {
+    margin-top: 0;
+    background-color: #141519;
+}
+
+.container {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 415px;
+    height: 415px;
+    background-color: #1f2630;
+    border-radius: 20px;
+}
+
+.star-form {
+    padding: 35px;
+}
+
+.star i {
+    border-radius: 50%;
+    border: 2px solid #262e38;
+    padding: 10px;
+    background-color: #262e38;
+    color: hsl(25, 97%, 53%);
+}
+
+div.star + h1 {
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+form.star-form > p {
+    color: hsl(216, 12%, 54%);
+}
+
+div.choices-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+div.choices-btns > button {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+}
+
+div.choices-btns > button.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+div.choices-btns > button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+form.star-form > button[type="submit"] {
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 31px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+form.star-form > button[type="submit"]:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#form-box p.error-msg {
+    position: absolute;
+    left: 50%;
+    top: 61%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 325px;
+    }
+
+    .star-form {
+        padding: 25px;
+    }
+
+    div.choices-btns > button {
+        width: 40px;
+        height: 40px;
+    }
+
+    #form-box p.error-msg {
+        top: 70%;
+    }
+}
+
+/*thanks-box*/
+#thanks-box {
+    display: none;
+}
+
+#thanks-box div {
+    text-align: center;
+    padding: 45px 36px;
+}
+
+#thanks-box h4 {
+    background-color: hsl(213, 19%, 18%);
+    width: 190px;
+    padding: 8px;
+    border-radius: 40px;
+    font-weight: 400;
+    color: hsl(25, 97%, 53%);
+    margin: 30px auto;
+}
+
+#thanks-box p {
+    margin-top: -10px;
+    color: hsl(217, 12%, 63%);
+    line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #thanks-box div {
+        padding: 40px 20px;
+    }
+
+    #thanks-box h1 {
+        font-size: 25px;
+    }
+}
